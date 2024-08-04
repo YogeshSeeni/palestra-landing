@@ -23,11 +23,11 @@ import {
 
 // Custom Components
 import { Section, Container } from "@/components/craft";
+import Logo from "@/public/logo.svg";
 
 // Assets
 import Placeholder from "@/public/placeholder.jpg";
 
-import Logo from "@/public/logo.png";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../app/firebase";
 
@@ -85,12 +85,12 @@ export default function Hero() {
               ></Image>
           <h1 className="!mb-0">
             <Balancer>
-            Elevate Your Fitness Journey with Palestra
+              Your Personal Fitness Assistant
             </Balancer>
           </h1>
           <h3 className="text-muted-foreground">
             <Balancer>
-              Sign up below for updates
+              Sign Up Below for Updates
             </Balancer>
           </h3>
           <Form {...form}>
