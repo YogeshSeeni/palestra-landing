@@ -1,0 +1,94 @@
+[debug] [2024-08-04T00:41:59.636Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T00:41:59.638Z] Command:       /usr/local/bin/firebase /Users/yogeshseenichamy/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-08-04T00:41:59.638Z] CLI Version:   13.15.0
+[debug] [2024-08-04T00:41:59.638Z] Platform:      darwin
+[debug] [2024-08-04T00:41:59.638Z] Node Version:  v18.5.0
+[debug] [2024-08-04T00:41:59.643Z] Time:          Sat Aug 03 2024 20:41:59 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-08-04T00:41:59.644Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T00:41:59.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T00:41:59.761Z] > authorizing via signed-in user (yogeshseeni60@gmail.com)
+[debug] [2024-08-04T00:41:59.762Z] [iam] checking project palestra-fitness-955cc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-04T00:41:59.765Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions [none]
+[debug] [2024-08-04T00:41:59.766Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions x-goog-quota-user=projects/palestra-fitness-955cc
+[debug] [2024-08-04T00:41:59.766Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T00:42:00.063Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions 200
+[debug] [2024-08-04T00:42:00.066Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T00:42:00.069Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc [none]
+[debug] [2024-08-04T00:42:00.515Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc 200
+[debug] [2024-08-04T00:42:00.517Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc {"projectId":"palestra-fitness-955cc","projectNumber":"483909118448","displayName":"Palestra Fitness","name":"projects/palestra-fitness-955cc","resources":{"hostingSite":"palestra-fitness-955cc"},"state":"ACTIVE","etag":"1_1a2ceee7-1b58-458a-a79c-6f9ddcd5df50"}
+[debug] [2024-08-04T00:42:02.863Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites pageToken=&pageSize=10
+[debug] [2024-08-04T00:42:03.320Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 200
+[debug] [2024-08-04T00:42:03.321Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites {"sites":[{"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T00:42:03.322Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 
+[debug] [2024-08-04T00:42:03.732Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 200
+[debug] [2024-08-04T00:42:03.732Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites {"sites":[{"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T00:42:03.733Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config [none]
+[debug] [2024-08-04T00:42:04.407Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config 200
+[debug] [2024-08-04T00:42:04.408Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config {"projectId":"palestra-fitness-955cc","appId":"1:483909118448:web:29de964c837d02c47c5535","storageBucket":"palestra-fitness-955cc.appspot.com","apiKey":"AIzaSyArm7y_6qgj5UIfUM70QiIMlGNNd6KBxF8","authDomain":"palestra-fitness-955cc.firebaseapp.com","messagingSenderId":"483909118448","measurementId":"G-EC42J7TSEH"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-08-04T00:42:10.076Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc [none]
+[debug] [2024-08-04T00:42:10.501Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc 200
+[debug] [2024-08-04T00:42:10.507Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc {"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}
+[info] You are using Node.js 18.5.0. For Next.js, Node.js version >= v18.17.0 is required.
+
+[debug] [2024-08-04T00:42:11.987Z] Error: ENOENT: no such file or directory, open '/Users/yogeshseenichamy/Documents/Projects/palestra-landing/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T00:45:24.773Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T00:45:24.774Z] Command:       /usr/local/bin/firebase /Users/yogeshseenichamy/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-08-04T00:45:24.774Z] CLI Version:   13.15.0
+[debug] [2024-08-04T00:45:24.775Z] Platform:      darwin
+[debug] [2024-08-04T00:45:24.775Z] Node Version:  v18.5.0
+[debug] [2024-08-04T00:45:24.781Z] Time:          Sat Aug 03 2024 20:45:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-08-04T00:45:24.781Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T00:45:24.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T00:45:24.901Z] > authorizing via signed-in user (yogeshseeni60@gmail.com)
+[debug] [2024-08-04T00:45:24.902Z] [iam] checking project palestra-fitness-955cc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-04T00:45:24.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions [none]
+[debug] [2024-08-04T00:45:24.905Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions x-goog-quota-user=projects/palestra-fitness-955cc
+[debug] [2024-08-04T00:45:24.906Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T00:45:25.211Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions 200
+[debug] [2024-08-04T00:45:25.214Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/palestra-fitness-955cc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T00:45:25.217Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc [none]
+[debug] [2024-08-04T00:45:25.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc 200
+[debug] [2024-08-04T00:45:25.683Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc {"projectId":"palestra-fitness-955cc","projectNumber":"483909118448","displayName":"Palestra Fitness","name":"projects/palestra-fitness-955cc","resources":{"hostingSite":"palestra-fitness-955cc"},"state":"ACTIVE","etag":"1_1a2ceee7-1b58-458a-a79c-6f9ddcd5df50"}
+[debug] [2024-08-04T00:45:28.211Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites pageToken=&pageSize=10
+[debug] [2024-08-04T00:45:28.719Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 200
+[debug] [2024-08-04T00:45:28.723Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites {"sites":[{"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T00:45:28.724Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 
+[debug] [2024-08-04T00:45:29.140Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites 200
+[debug] [2024-08-04T00:45:29.140Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites {"sites":[{"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T00:45:29.140Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config [none]
+[debug] [2024-08-04T00:45:29.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config 200
+[debug] [2024-08-04T00:45:29.770Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/palestra-fitness-955cc/webApps/-/config {"projectId":"palestra-fitness-955cc","appId":"1:483909118448:web:29de964c837d02c47c5535","storageBucket":"palestra-fitness-955cc.appspot.com","apiKey":"AIzaSyArm7y_6qgj5UIfUM70QiIMlGNNd6KBxF8","authDomain":"palestra-fitness-955cc.firebaseapp.com","messagingSenderId":"483909118448","measurementId":"G-EC42J7TSEH"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-08-04T00:45:35.438Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc [none]
+[debug] [2024-08-04T00:45:36.117Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc 200
+[debug] [2024-08-04T00:45:36.120Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/palestra-fitness-955cc/sites/palestra-fitness-955cc {"name":"projects/palestra-fitness-955cc/sites/palestra-fitness-955cc","defaultUrl":"https://palestra-fitness-955cc.web.app","type":"DEFAULT_SITE"}
+[info] You are using Node.js 18.5.0. For Next.js, Node.js version >= v18.17.0 is required.
+
+[debug] [2024-08-04T00:45:37.410Z] Error: ENOENT: no such file or directory, open '/Users/yogeshseenichamy/Documents/Projects/palestra-landing/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
