@@ -35,33 +35,33 @@ export default function Footer() {
             </Link>
             <p>
               <Balancer>
-              Palestra Fitness is your ultimate companion for seamless workout tracking, insightful analysis, and personalized AI coaching.
+                Palestra Fitness is your ultimate companion for seamless workout tracking, insightful analysis, and personalized AI coaching.
               </Balancer>
             </p>
           </div>
-          {/* <div className="mb-4 flex flex-col gap-4 md:mb-0 md:flex-row">
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-of-service">Terms of Service</Link>
-            <Link href="/cookie-policy">Cookie Policy</Link>
-          </div> */}
         </Container>
         <Container className="not-prose flex flex-col justify-between gap-6 border-t md:flex-row md:items-center md:gap-2">
-          {/* <div className="flex gap-2">
-            <Button variant="outline" size="icon">
-              <Github />
-            </Button>
-            <Button variant="outline" size="icon">
-              <Twitter />
-            </Button>
-            <Button variant="outline" size="icon">
-              <Facebook />
-            </Button>
-          </div> */}
-          <p className="text-muted-foreground">
-            ©{" "}
-            Palestra Fitness.
-            All rights reserved. 2024-present.
-          </p>
+          <div className="text-muted-foreground text-sm">
+            <h4>Privacy Policy</h4>
+            <p>
+              At Palestra Fitness, we are committed to protecting your privacy. We collect personal information such as your name, email address, and workout data to enhance your experience with our app. Your data is stored securely and is used to provide personalized services, improve app performance, and communicate with you.
+            </p>
+            <p>
+              We do not sell or share your personal information with third parties.
+            </p>
+            <p>
+              We may retain your data as long as your account is active or as necessary to comply with legal obligations. You have the right to access, update, or delete your information at any time. We implement industry-standard security measures to protect your data from unauthorized access.
+            </p>
+            <p>
+              By using our app, you agree to this Privacy Policy. We may update this policy from time to time, and we will notify you of any significant changes.
+            </p>
+            <p>
+              If you have any questions or concerns, please contact us at support@trainpalestra.com.
+            </p>
+            <p>
+              © Palestra Fitness. All rights reserved. 2024-present.
+            </p>
+          </div>
         </Container>
       </Section>
     </footer>
